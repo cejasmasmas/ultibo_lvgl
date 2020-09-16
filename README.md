@@ -1,2 +1,2 @@
 # ultibo_lvgl
-Test framework for lvgl in ultibo baremetal framework
+Test place for lvgl in ultibo baremetal framework

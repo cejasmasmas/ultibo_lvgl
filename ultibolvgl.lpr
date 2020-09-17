@@ -18,6 +18,7 @@ Console, SysUtils, Threads, VC4, Syscalls, Mouse, keyboard, DWCOTG, Framebuffer;
 
 procedure lvglmain; cdecl; external 'libultiboClvgl' name 'lvglmain';
 
+
 var
   FramebufferDevice     : PFramebufferDevice;
   FramebufferProperties : TFramebufferProperties;

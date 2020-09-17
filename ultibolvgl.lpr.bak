@@ -16,7 +16,10 @@ Console, SysUtils, Threads, VC4, Syscalls, Mouse, keyboard, DWCOTG, Framebuffer;
 {$linklib ultiboClvgl}
 
 
-procedure sEfis; cdecl; external 'libultiboClvgl' name 'lvglmain';
+
+
+procedure lvglmain; cdecl; external 'libultiboClvgl' name 'lvglmain';
+
 
 var
   FramebufferDevice     : PFramebufferDevice;
@@ -40,12 +43,12 @@ var
    const RUNDELAY = 200;
   {$ENDIF}
 
-  function getScreenPitch() : integer; export; cdecl; //USED
+  function getScreenPitch() : integer; export; cdecl; 
   begin
      Result := FramebufferProperties.Pitch;
   end;
 
-  function getScreenBuffer() : pointer; export; cdecl; //USED
+  function getScreenBuffer() : pointer; export; cdecl; 
   begin
      Result := BufferStart;
   end;
